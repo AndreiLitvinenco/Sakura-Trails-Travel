@@ -7,7 +7,7 @@ body {
 
 .hero-section {
   position: relative;
-  background-image: url('../resources/UIUX/Background_Japan3.png'); 
+  background-image: url('../resources/UIUX/Background_Japan5.png'); 
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -135,4 +135,50 @@ nav {
   background-color: #ddd; 
   height: 200px; 
   border-radius: 5px;
+}
+
+
+.booking-section {
+  width: 100vw;
+  background-color: #500000;
+  padding: 50px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.input-container {
+  text-align: left;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  padding-left: 5px;
+}
+
+input {
+  width: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.booking-section button {
+  padding: 10px 60px;
+  background-color: #3e3e3e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6666;
 }
