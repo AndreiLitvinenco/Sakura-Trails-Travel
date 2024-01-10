@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  z-index: 10;
 }
 
 .hero-content {
@@ -370,4 +371,18 @@ margin-bottom: 10px;
 
 .copyright small {
 display: block;
+}
+
+#link_top{
+  --dimensiune:3rem;
+  --spatiere:1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dimensiune);
+  height: var(--dimensiune);
+  position: fixed;
+  bottom:var(--spatiere);
+  right:var(--spatiere);
+  border-radius: 50%;
 }
