@@ -415,3 +415,66 @@ display: block;
   right:var(--spatiere);
   border-radius: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .nav-buttons.active {
+    display: flex;
+  }
+
+  .nav-button {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dropdown-content {
+    width: 100%;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+ .nav-buttons {
+    display: none;
+ }
+
+ .bar.active1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+ }
+
+  .bar.active2 {
+    opacity: 0;
+  }
+
+   .bar.active3 {
+       transform: rotate(45deg) translate(-5px, -6px);
+   }
+}

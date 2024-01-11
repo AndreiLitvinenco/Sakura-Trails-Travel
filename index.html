@@ -3,6 +3,7 @@
     <head>
         <title>Sakura Trails Travel</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Litvinenco Andrei">
         <meta name="descriptiom" content="Demo project page for a travel company">
         <meta name="keywords" content="HTML, CSS, JavaScript, Travel, Japan">
@@ -16,6 +17,7 @@
         <link rel="stylesheet" href="./resources/styles.css">
     </head>
     <body>
+      <script src="./resources/index.js"></script>
       <header>
       <div class="hero-section">
         <nav>
@@ -23,7 +25,16 @@
               <img src="./resources/UIUX/logonavbar.png" alt="Logo">
               Sakura Trails Travel
           </div>
+
+          <!-- Hamburger menu icon -->
+          <div class="hamburger-menu" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+
           <div class="nav-buttons">
+              <!-- Home dropdown menu -->
               <div class="dropdown">
                   <a href="#" class="nav-button">Home</a>
                   <div class="dropdown-content">
@@ -31,7 +42,7 @@
                       <a href="#Packages-section">Packages</a>
                   </div>
               </div>
-    
+
               <a href="#" class="nav-button">Contact</a>
               <a href="#" class="nav-button">Sign up</a>
               <a href="#" class="nav-button">Booking</a>
