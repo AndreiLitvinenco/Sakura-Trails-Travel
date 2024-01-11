@@ -20,16 +20,23 @@
       <div class="hero-section">
         <nav>
           <div class="logo-text">
-            <img src="./resources/UIUX/logonavbar.png" alt="Logo">
-            Sakura Trails Travel
+              <img src="./resources/UIUX/logonavbar.png" alt="Logo">
+              Sakura Trails Travel
           </div>
           <div class="nav-buttons">
-            <a href="#" class="nav-button">Home</a>
-            <a href="#" class="nav-button">Contact</a>
-            <a href="#" class="nav-button">Sign up</a>
-            <a href="#" class="nav-button">Booking</a>
+              <div class="dropdown">
+                  <a href="#" class="nav-button">Home</a>
+                  <div class="dropdown-content">
+                      <a href="#Popular-section">Popular Destinations</a>
+                      <a href="#Packages-section">Packages</a>
+                  </div>
+              </div>
+    
+              <a href="#" class="nav-button">Contact</a>
+              <a href="#" class="nav-button">Sign up</a>
+              <a href="#" class="nav-button">Booking</a>
           </div>
-        </nav>
+      </nav>
     
         <div class="hero-content">
           <div class="hero-text">TRAVEL TO JAPAN</div>
@@ -69,7 +76,7 @@
         <button>Inquire now</button>
       </div>
     
-      <div class="popular-destinations-section">
+      <div class="popular-destinations-section" id="Popular-section">
         <div class="section-header">
           <p class="small-text">Uncover places</p>
           <h2 class="big-text">Popular Destinations</h2>
@@ -83,7 +90,7 @@
         </div>
       </div>
     
-      <div class="new-section">
+      <div class="new-section" id="Packages-section">
         <div class="section-header">
           <p class="small-text">Popular Packages</p>
           <h2 class="big-text">Checkout our Packages</h2>
