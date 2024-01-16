@@ -14,6 +14,8 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="./resources/styles.css">
+        <script src="./resources/packages.js"></script>
+        <link rel="stylesheet" href="./resources/packages.css">
     </head>
     <body>
 
@@ -31,16 +33,46 @@
             <a href="https://www.youtube.com/embed/PteLXcm9b10?si=KMoanHs8svWwa0bd" target="main-japan-showcase" >3</a><br/>
             </div>
         <iframe name="main-japan-showcase" width="560" height="315" src="https://www.youtube.com/embed/psoJlE-cCcE?si=_hxazVXrbGd1u66j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="angry-button" onclick="afiseazadata()">Hello world</button>
+            <button id="marcheaza-randuri" onclick="marcheazaRanduri()">Marcheaza randuri</button>
+            <button id="numara_randuri" onclick="numaraRanduri()">Numără Rânduri Tabel</button>
 
-        <footer>
-            <address>
-                <a href="tel:+4999999999"><img src="./resources/UIUX/phone_icon.png" alt="phone_icon" width="28" height="28"></a>
-                <a href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355393,26.0970118,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?entry=ttu"><img src="./resources/UIUX/map_icon.png" alt="map_icon" width="28" height="28"></a>
-                <a href="mailto:ilovejapan@gmail.com"><img src="./resources/UIUX/mail_icon.png" alt="mail_icon" width="28" height="28"></a>
-                <a href="#booking_external" id="footer-back-to-top">arrow_placeholer</a>
-                <p>Street Nakanoshima 1-jo, 312-1019, Hokaido, Japan</p>
-                <small>&copy; <time datetime="2023-11-01">2023</time> Litvinenco Andrei. All Rights Reserved.</small>
-            </address>
-        </footer>
+            <table border="1" id="tabel">
+                <thead>
+                    <tr>
+                        <th>Coloana 1</th>
+                        <th>Coloana 2</th>
+                        <th>Coloana 3</th>
+                        <th>Coloana 4</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            
     </body>
+    <footer>
+        <a id="link_top" href="#" title="Back-to-top"><img src="./resources/ico/arrowhead-up.png"></a>
+        <div class="contact-info">
+          <a href="tel:+40999999999"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="white" d="M231.88 175.08A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62"/></svg></a>
+          <a href="mailto:no_easter@eggs.dev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg></a>
+          <a href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355355,26.0995867,15z/data=!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?hl=en&entry=ttu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg></a>
+        </div>
+        <address>
+          <small>Nakanoshima 1-jo, 312-1019, Hokaido, Japan</small>
+        </address>
+        <div class="copyright">
+          <small>Connect with us:</small>
+          <small>&copy; <time datetime="2023-11-01">2024</time> Litvinenco Andrei Alexandru. All rights reserved.</small>
+        </div>
+      </footer>
 </html>
