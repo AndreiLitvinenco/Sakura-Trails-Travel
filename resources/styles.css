@@ -1,3 +1,5 @@
+@import url("../resources/env.css");
+
 body {
   margin: 0;
   padding: 0;
@@ -46,7 +48,7 @@ body {
 }
 
 .explore-button {
-  background-color: #ff3333;
+  background-color: var(--accent2);
   color: white;
   text-decoration: none;
   padding: 15px 30px;
@@ -57,7 +59,7 @@ body {
 }
 
 .explore-button:hover {
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 .rectangle-buttons {
@@ -79,7 +81,7 @@ body {
 }
 
 .rectangle-button:hover {
-  background-color: #f0f0f0;
+  background-color: var(--sectionbg);
 }
 
 nav {
@@ -157,12 +159,12 @@ nav {
 }
 
 .nav-button:hover {
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 .section {
   width: 100vw;
-  background-color: #f0f0f0;
+  background-color: var(--sectionbg);
   padding: 50px 300px;
   display: flex;
   justify-content: space-between;
@@ -202,11 +204,11 @@ input {
 }
 
 button:hover {
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 .new-section {
-  background-color: #f0f0f0;
+  background-color: var(--sectionbg);
   padding: 50px 0;
   text-align: center;
 }
@@ -235,7 +237,7 @@ button:hover {
 }
 
 .popular-destinations-section {
-  background-color: #f0f0f0;
+  background-color: var(--sectionbg);
   padding: 50px 300px;
   text-align: center;
 }
@@ -255,7 +257,7 @@ button:hover {
 }
 
 .new-section {
-  background-color: #f0f0f0;
+  background-color: var(--sectionbg);
   padding: 50px 300px;
   text-align: center;
 }
@@ -321,7 +323,7 @@ button:hover {
 
 .book-now-button {
   display: block;
-  background-color: #ff3333;
+  background-color: var(--accent2);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -330,13 +332,13 @@ button:hover {
 }
 
 .book-now-button:hover {
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 .more-destinations-button {
   display: block;
   margin: 20px auto;
-  background-color: #ff3333;
+  background-color: var(--accent2);
   color: white;
   text-decoration: none;
   padding: 15px 30px;
@@ -346,11 +348,11 @@ button:hover {
 }
 
 .more-destinations-button:hover {
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 .cta-section {
-  background-color: #ff6666;
+  background-color: var(--accent);
   color: white;
   text-align: center;
   padding: 80px 0;
@@ -408,8 +410,6 @@ footer {
 }
 
 #link_top {
-  --dimensiune: 3rem;
-  --spatiere: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +425,7 @@ footer {
 
 #link_top:hover {
   color: white;
-  background-color: #ff6666;
+  background-color: var(--accent);
 }
 
 @media screen and (max-width: 768px) {
