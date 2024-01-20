@@ -3,6 +3,7 @@
     <head>
         <title>Sakura Trails Travel</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Litvinenco Andrei">
         <meta name="descriptiom" content="Demo project page for a travel company">
         <meta name="keywords" content="HTML, CSS, JavaScript, Travel, Japan">
@@ -14,99 +15,207 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="./resources/styles.css">
+        <link rel="stylesheet" href="./resources/env.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="./resources/UIUX/logonavbar.png" alt="Sakura Trails Travel logo" width="55" height="51">
-                <h2>SAKURA TRAILS TRAVEL</h2>
-                <ul class="navigation-menu">
-                    <li>
-                        <div>HOME</div>
-                            <ul>
-                                <li><a href="#About-japan">About japan</a></li>
-                                <li><a href="#Packages">Packages</a></li>
-                                <li><a href="#Book-now">Book now</a></li>
-                            </ul>
-                    </li>
-                    <li>
-                        <a href="./packages.html">BOOKING</a>
-                    <li>
-                        <a href="#">CONTACT</a>
-                    <li>
-                        <a href="#">SIGN UP</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <img src="./resources/UIUX/Background_Japan.png" alt="Japan Background" width="1440" height="767">
-            <h1>TRAVEL TO JAPAN</h1>
-            <button type="button" id="explore-more-button">Explore more</button>
-            <a href="#">■</a>
-            <a href="#">■</a>
-            <a href="#">■</a>
-            <section id="About-japan">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/erGJkZZsTds?si=wKp49zR8a16VP165" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h2 id="#about_japan">About Japan</h2>
-                <aside>
-                    <p id="About_japan">
-                     <q><b>Japan</b>, a land of exquisite contrasts and captivating beauty, bewitches every traveler with its unparalleled allure.</q> From the majestic slopes of <strong>Mount Fuji</strong>, cloaked in ethereal mist, to the delicate blossoms of cherry trees painting the landscapes in hues of pink during springtime, Japan is a masterpiece of nature’s artistry. Its meticulously manicured gardens, like the iconic Kenrokuen in <strong>Kanazawa</strong>, whisper tales of ancient serenity, while bustling metropolises such as Tokyo and Osaka pulse with a modern energy that is both electrifying and infectious. The country's architectural marvels, from ancient temples adorned with intricate wooden carvings to futuristic skyscrapers reflecting the vibrant city lights, stand as a testament to Japan's rich heritage and innovative spirit. Moreover, Japan’s natural wonders, including enchanting bamboo forests, secluded hot springs (onsen), and idyllic islands such as <strong>Miyajima</strong>, create a harmonious blend of tranquility and awe. Each season graces this land with its own distinct charm – cherry <i>blossoms in spring</i>, lush greenery in summer, fiery foliage in autumn, and pristine snowscapes in winter. Japan is not just a destination; it’s a symphony of beauty, a visual poem waiting to be explored.
-                    </p>
-                </aside>
-            </section>
-            <section id="#Packages">
-                <h2>P A C K A G E S</h2>
-                <table>
-                    <tr>
-                        <td>Destionation_image_1</td><td>destination_image_2</td><td>destination_image_3</td><td>destination_image_4</td>
-                    </tr>
-                    <tr>
-                        <td>Tokyo</td><td>Kyoto</td><td>Osaka</td><td>Okinawa</td>
-                    </tr>
-                    <tr>
-                        <td>★★★★★</td><td>★★★★★</td><td>★★★★★</td><td>★★★★★</td>
-                    </tr>
-                    <tr>
-                        <td><button type="button" class="order-now-button">Order now</button></td>
-                        <td><button type="button" class="order-now-button">Order now</button></td>
-                        <td><button type="button" class="order-now-button">Order now</button></td>
-                        <td><button type="button" class="order-now-button">Order now</button></td>
-                    </tr>
-                </table>
-            </section>
-            <section id="#Book-now">
-                <h2>B O O K  N O W</h2>
-                <figure>
-                    <picture>
-                        <source srcset="./resources/UIUX/suitcase700.png" media="(max-width:700px)">
-                        <source srcset="./resources/UIUX/suitcase1200.png" media="(max-width:1200px)">
-                        <img src="./resources/UIUX/suitcase.png" alt="suitcase" style="width: 455px; height: 456px;">
-                    </picture>
-                    <figcaption id="figcaption">Suitcase</figcaption>
-                </figure>
-                <form id="Booking-form">
-                    <label for="form_where_to_name">Where to</label><br>
-                    <input type="text" id="form_where_to_name" name="form_where_to_name" value="search place"><br><br>
-                    <label for="form_how_many_name">How many</label><br>
-                    <input type="text" id="form_how_many_name" name="form_how_many_name" value="number of guests"><br><br>
-                    <label for="form_departure_date">Departure</label><br>
-                    <input type="date" id="form_departure_date"><br><br>
-                    <label for="form_leaving_date">Leaving</label><br>
-                    <input type="date" id="form_leaving_date"><br><br>
-                    <input type="submit" value="Book Now">
-                  </form> 
-            </section>
-        </main>
-        <footer>
-            <address>
-                <a href="tel:+4999999999"><img src="./resources/UIUX/phone_icon.png" alt="phone_icon" width="28" height="28"></a>
-                <a href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355393,26.0970118,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?entry=ttu"><img src="./resources/UIUX/map_icon.png" alt="map_icon" width="28" height="28"></a>
-                <a href="mailto:ilovejapan@gmail.com"><img src="./resources/UIUX/mail_icon.png" alt="mail_icon" width="28" height="28"></a>
-                <a href="#booking_external" id="footer-back-to-top">arrow_placeholer</a>
-                <p>Street Nakanoshima 1-jo, 312-1019, Hokaido, Japan</p>
-                <small>&copy; <time datetime="2023-11-01">2023</time> Litvinenco Andrei. All Rights Reserved.</small>
-            </address>
-        </footer>
+      <script src="./resources/index.js"></script>
+      <header>
+      <div class="hero-section">
+        <nav>
+          <div class="logo-text">
+              <img src="./resources/UIUX/logonavbar.png" alt="Logo">
+              Sakura Trails Travel
+          </div>
+
+          <!-- Hamburger menu icon -->
+          <div class="hamburger-menu" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+
+          <div class="nav-buttons">
+              <!-- Home dropdown menu -->
+              <div class="dropdown">
+                  <a href="#" class="nav-button">Home</a>
+                  <div class="dropdown-content">
+                      <a href="#Popular-section">Popular Destinations</a>
+                      <a href="#Packages-section">Packages</a>
+                  </div>
+              </div>
+
+              <a href="#" class="nav-button">Contact</a>
+              <a href="#" class="nav-button">Sign up</a>
+              <a href="#" class="nav-button">Booking</a>
+          </div>
+      </nav>
+    
+        <div class="hero-content">
+          <div class="hero-text">TRAVEL TO JAPAN</div>
+          <p class="hero-paragraph"><b>Discover</b> the beauty of Japan's rich culture, stunning landscapes, and vibrant cities. Immerse yourself in the unique blend of <strong>tradition</strong> and <strong>modernity</strong>. <i>Your</i> unforgettable journey starts here.</p>
+          <a href="#" class="explore-button">Explore more</a>
+        </div>
+    
+        <div class="rectangle-buttons">
+          <button class="rectangle-button"></button>
+          <button class="rectangle-button"></button>
+          <button class="rectangle-button"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section">
+        <div class="input-container">
+            <div class="label">Search Destination</div>
+            <input type="text" placeholder="Enter destination">
+        </div>
+    
+        <div class="input-container">
+            <div class="label">Pax Number</div>
+            <input type="text" placeholder="No. of people">
+        </div>
+    
+        <div class="input-container">
+            <div class="label">Checkin Date</div>
+            <input type="date">
+        </div>
+    
+        <div class="input-container">
+            <div class="label">Checkout date</div>
+            <input type="date">
+        </div>
+    
+        <button>Inquire now</button>
+      </div>
+    
+      <div class="popular-destinations-section" id="Popular-section">
+        <div class="section-header">
+          <p class="small-text">Uncover places</p>
+          <h2 class="big-text">Popular Destinations</h2>
+          <p class="matching-paragraph">Discover the most amazing places around the world. From bustling cities to serene landscapes, explore the beauty that awaits you.</p>
+        </div>
+    
+        <div class="image-container">
+
+          <picture>
+            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
+            <img src="./resources/cards/Vector.png" alt="Tokyo-card" class="placeholder-image">
+          </picture>
+
+          <picture>
+            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
+            <img src="./resources/cards/Vector-1.png" alt="Kyoto-card" class="placeholder-image">
+          </picture>
+
+          <picture>
+            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
+            <img src="./resources/cards/Vector-2.png" alt="Osaka-card" class="placeholder-image">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="new-section" id="Packages-section">
+        <div class="section-header">
+          <p class="small-text">Popular Packages</p>
+          <h2 class="big-text">Checkout our Packages</h2>
+          <p class="matching-paragraph">Explore our popular travel packages designed to make your journey unforgettable.</p>
+        </div>
+      
+        <div class="package-container">
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+              <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+      
+          <div class="package">
+            <div class="package-image"></div>
+            <div class="package-details">
+              <p class="package-text">TBE</p>
+                <div class="price-box">$TBE</div>
+              <a href="#" class="book-now-button">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <button class="more-destinations-button">More Destinations</button>
+      </div>
+      <div class="cta-section">
+        <h2 class="cta-heading">Embark on Your Journey</h2>
+        <p class="cta-description">Explore new destinations and create lasting memories with Sakura Trails Travel.</p>
+        <a href="#" class="cta-button">Start Planning</a>
+      </div>
+    </main>
+      <footer>
+        <a id="link_top" href="#" title="Back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M8.2 751.4c0 8.6 3.4 17.401 10 24.001c13.2 13.2 34.8 13.2 48 0l451.8-451.8l445.2 445.2c13.2 13.2 34.8 13.2 48 0s13.2-34.8 0-48L542 251.401c-13.2-13.2-34.8-13.2-48 0l-475.8 475.8c-6.8 6.8-10 15.4-10 24.2z"/></svg></a>
+        <div class="contact-info">
+          <a href="tel:+40999999999"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="white" d="M231.88 175.08A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62"/></svg></a>
+          <a href="mailto:no_easter@eggs.dev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg></a>
+          <a href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355355,26.0995867,15z/data=!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?hl=en&entry=ttu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg></a>
+        </div>
+        <address>
+          <small>Nakanoshima 1-jo, 312-1019, Hokaido, Japan</small>
+        </address>
+        <div class="copyright">
+          <small>Connect with us:</small>
+          <small>&copy; <time datetime="2023-11-01">2024</time> Litvinenco Andrei Alexandru. All rights reserved.</small>
+        </div>
+      </footer>
     </body>
 </html>
