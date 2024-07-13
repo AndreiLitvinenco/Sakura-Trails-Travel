@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sakura Trails Travel</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Litvinenco Andrei">
-        <meta name="descriptiom" content="Demo project page for a travel company">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Travel, Japan">
-        <link rel="apple-touch-icon" sizes="180x180" href="./resources/ico/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./resources/ico/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./resources/ico/favicon-16x16.png">
-        <link rel="manifest" href="./resources/ico/site.webmanifest">
-        <link rel="mask-icon" href="./resources/ico/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="./resources/styles.css">
-        <link rel="stylesheet" href="./resources/env.css">
-    </head>
-    <body>
-      <script src="./resources/index.js"></script>
-      <header>
+  <head>
+    <title>Sakura Trails Travel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Litvinenco Andrei" />
+    <meta name="descriptiom" content="Demo project page for a travel company" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Travel, Japan" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./resources/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./resources/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./resources/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./resources/ico/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./resources/ico/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./resources/styles.css" />
+    <link rel="stylesheet" href="./resources/env.css" />
+  </head>
+  <body>
+    <script src="./resources/index.js"></script>
+    <header>
       <div class="hero-section">
         <nav>
           <div class="logo-text">
-              <img src="./resources/UIUX/logonavbar.png" alt="Logo">
-              Sakura Trails Travel
+            <img src="./resources/UIUX/logonavbar.png" alt="Logo" />
+            Sakura Trails Travel
           </div>
 
           <!-- Hamburger menu icon -->
           <div class="hamburger-menu" onclick="toggleMenu()">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
           </div>
 
           <div class="nav-buttons">
-              <!-- Home dropdown menu -->
-              <div class="dropdown">
-                  <a href="#" class="nav-button">Home</a>
-                  <div class="dropdown-content">
-                      <a href="#Popular-section">Popular Destinations</a>
-                      <a href="#Packages-section">Packages</a>
-                  </div>
-              </div>
-
-              <a href="#" class="nav-button">Contact</a>
-              <a href="#" class="nav-button">Sign up</a>
-              <a href="#" class="nav-button">Booking</a>
+            <!-- Home dropdown menu -->
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Contact</a>
+            <a href="#" class="nav-button">Sign up</a>
+            <a href="#" class="nav-button">Booking</a>
           </div>
-      </nav>
-    
+        </nav>
+
         <div class="hero-content">
           <div class="hero-text">TRAVEL TO JAPAN</div>
-          <p class="hero-paragraph"><b>Discover</b> the beauty of Japan's rich culture, stunning landscapes, and vibrant cities. Immerse yourself in the unique blend of <strong>tradition</strong> and <strong>modernity</strong>. <i>Your</i> unforgettable journey starts here.</p>
+          <p class="hero-paragraph">
+            <b>Discover</b> the beauty of Japan's rich culture, stunning
+            landscapes, and vibrant cities. Immerse yourself in the unique blend
+            of <strong>tradition</strong> and <strong>modernity</strong>.
+            <i>Your</i> unforgettable journey starts here.
+          </p>
           <a href="#" class="explore-button">Explore more</a>
         </div>
-    
+
         <div class="rectangle-buttons">
           <button class="rectangle-button"></button>
           <button class="rectangle-button"></button>
@@ -66,61 +82,55 @@
     <main>
       <div class="section">
         <div class="input-container">
-            <div class="label">Search Destination</div>
-            <input type="text" placeholder="Enter destination">
+          <div class="label">Search Destination</div>
+          <input type="text" placeholder="Enter destination" />
         </div>
-    
+
         <div class="input-container">
-            <div class="label">Pax Number</div>
-            <input type="text" placeholder="No. of people">
+          <div class="label">Pax Number</div>
+          <input type="text" placeholder="No. of people" />
         </div>
-    
+
         <div class="input-container">
-            <div class="label">Checkin Date</div>
-            <input type="date">
+          <div class="label">Checkin Date</div>
+          <input type="date" />
         </div>
-    
+
         <div class="input-container">
-            <div class="label">Checkout date</div>
-            <input type="date">
+          <div class="label">Checkout date</div>
+          <input type="date" />
         </div>
-    
+
         <button>Inquire now</button>
       </div>
-    
+
       <div class="popular-destinations-section" id="Popular-section">
         <div class="section-header">
           <p class="small-text">Uncover places</p>
           <h2 class="big-text">Popular Destinations</h2>
-          <p class="matching-paragraph">Discover the most amazing places around the world. From bustling cities to serene landscapes, explore the beauty that awaits you.</p>
+          <p class="matching-paragraph">
+            Discover the most amazing places around the world. From bustling
+            cities to serene landscapes, explore the beauty that awaits you.
+          </p>
         </div>
-    
+
         <div class="image-container">
-
-          <picture>
-            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
-            <img src="./resources/cards/Vector.png" alt="Tokyo-card" class="placeholder-image">
-          </picture>
-
-          <picture>
-            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
-            <img src="./resources/cards/Vector-1.png" alt="Kyoto-card" class="placeholder-image">
-          </picture>
-
-          <picture>
-            <source media="(max-width:465px)" srcset="./resources/cards/Vector-3.png">
-            <img src="./resources/cards/Vector-2.png" alt="Osaka-card" class="placeholder-image">
-          </picture>
+          <div class="cards" id="card1"></div>
+          <div class="cards" id="card2"></div>
+          <div class="cards" id="card3"></div>
         </div>
       </div>
-    
+
       <div class="new-section" id="Packages-section">
         <div class="section-header">
           <p class="small-text">Popular Packages</p>
           <h2 class="big-text">Checkout our Packages</h2>
-          <p class="matching-paragraph">Explore our popular travel packages designed to make your journey unforgettable.</p>
+          <p class="matching-paragraph">
+            Explore our popular travel packages designed to make your journey
+            unforgettable.
+          </p>
         </div>
-      
+
         <div class="package-container">
           <div class="package">
             <div class="package-image"></div>
@@ -130,7 +140,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -139,7 +149,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -148,7 +158,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -157,7 +167,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -166,7 +176,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -175,7 +185,7 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
@@ -184,12 +194,12 @@
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
-      
+
           <div class="package">
             <div class="package-image"></div>
             <div class="package-details">
               <p class="package-text">TBE</p>
-                <div class="price-box">$TBE</div>
+              <div class="price-box">$TBE</div>
               <a href="#" class="book-now-button">Book Now</a>
             </div>
           </div>
@@ -198,24 +208,75 @@
       </div>
       <div class="cta-section">
         <h2 class="cta-heading">Embark on Your Journey</h2>
-        <p class="cta-description">Explore new destinations and create lasting memories with Sakura Trails Travel.</p>
+        <p class="cta-description">
+          Explore new destinations and create lasting memories with Sakura
+          Trails Travel.
+        </p>
         <a href="#" class="cta-button">Start Planning</a>
       </div>
     </main>
-      <footer>
-        <a id="link_top" href="#" title="Back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M8.2 751.4c0 8.6 3.4 17.401 10 24.001c13.2 13.2 34.8 13.2 48 0l451.8-451.8l445.2 445.2c13.2 13.2 34.8 13.2 48 0s13.2-34.8 0-48L542 251.401c-13.2-13.2-34.8-13.2-48 0l-475.8 475.8c-6.8 6.8-10 15.4-10 24.2z"/></svg></a>
-        <div class="contact-info">
-          <a href="tel:+40999999999"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="white" d="M231.88 175.08A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62"/></svg></a>
-          <a href="mailto:no_easter@eggs.dev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg></a>
-          <a href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355355,26.0995867,15z/data=!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?hl=en&entry=ttu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg></a>
-        </div>
-        <address>
-          <small>Nakanoshima 1-jo, 312-1019, Hokaido, Japan</small>
-        </address>
-        <div class="copyright">
-          <small>Connect with us:</small>
-          <small>&copy; <time datetime="2023-11-01">2024</time> Litvinenco Andrei Alexandru. All rights reserved.</small>
-        </div>
-      </footer>
-    </body>
+    <footer>
+      <a id="link_top" href="#" title="Back-to-top"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M8.2 751.4c0 8.6 3.4 17.401 10 24.001c13.2 13.2 34.8 13.2 48 0l451.8-451.8l445.2 445.2c13.2 13.2 34.8 13.2 48 0s13.2-34.8 0-48L542 251.401c-13.2-13.2-34.8-13.2-48 0l-475.8 475.8c-6.8 6.8-10 15.4-10 24.2z"
+          /></svg
+      ></a>
+      <div class="contact-info">
+        <a href="tel:+40999999999"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="white"
+              d="M231.88 175.08A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62"
+            /></svg
+        ></a>
+        <a href="mailto:no_easter@eggs.dev"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"
+            /></svg
+        ></a>
+        <a
+          href="https://www.google.com/maps/place/Faculty+of+Mathematics+and+Computer+Science/@44.4355355,26.0995867,15z/data=!4m6!3m5!1s0x40b1ff472f47f047:0x493984726f0235f9!8m2!3d44.4355355!4d26.0995867!16s%2Fg%2F1td63tdh?hl=en&entry=ttu"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+            /></svg
+        ></a>
+      </div>
+      <address>
+        <small>Nakanoshima 1-jo, 312-1019, Hokaido, Japan</small>
+      </address>
+      <div class="copyright">
+        <small>Connect with us:</small>
+        <small
+          >&copy; <time datetime="2023-11-01">2024</time> Litvinenco Andrei
+          Alexandru. All rights reserved.</small
+        >
+      </div>
+    </footer>
+  </body>
 </html>
