@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-image: url(./resources/cards/TokyoCard.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 300px;
+        position: relative;
+      }
+
+      .card-interior {
+        background-color: white;
+        position: absolute;
+        bottom: 20px;
+        right: 18px;
+        left: 18px;
+        border-radius: 20px;
+        padding: 0 15px;
+      }
+
+      .test {
+        position: relative;
+      }
+
+      .stelute {
+        position: absolute;
+        background-color: red;
+        top: -10px;
+        right: 15px;
+        left: 140px;
+        border-radius: 20px;
+        height: 25px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card-text {
+        margin-top: 5px;
+      }
+
+      .text1 {
+        font-size: 13px;
+        line-height: 8px;
+      }
+
+      .text2 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .text3 {
+        padding-top: 5px;
+        font-size: 12px;
+        text-align: justify;
+      }
+      .stelute p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="./resources/cards/Vector-1.png" />
+      <div class="card">
+        <div class="card-interior">
+          <div class="test">
+            <div class="stelute"><p>★★★★★</p></div>
+          </div>
+          <div class="card-text">
+            <p class="text1">Japan</p>
+            <p class="text2">Kyoto</p>
+            <p class="text3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              esse veniam quis quae sunt sint magni voluptas saepe minus
+              possimus, eius numquam est consequatur dolorem labore eligendi
+              excepturi ab quos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>
