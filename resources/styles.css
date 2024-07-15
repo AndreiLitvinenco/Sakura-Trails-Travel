@@ -252,6 +252,7 @@ button:hover {
 .popular-destinations-section .image-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .popular-destinations-section .placeholder-image {
@@ -484,20 +485,21 @@ footer {
   height: 450px;
   border-radius: 40px;
   margin-left: 50px;
+  margin-bottom: 25px;
 }
 
 #card1 {
-  background-image: url(../resources/cards/TokyoCard.svg);
+  background-image: url(../resources/cards/Vector.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #card2 {
-  background-image: url(../resources/cards/KyotoCard.svg);
+  background-image: url(../resources/cards/Vector-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #card3 {
-  background-image: url(../resources/cards/OsakaCard.svg);
+  background-image: url(../resources/cards/Vector-2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
