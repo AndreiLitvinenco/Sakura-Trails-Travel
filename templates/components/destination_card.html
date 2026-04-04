@@ -1,0 +1,12 @@
+<div class="cards" style="background-image: url('{{ url_for('static', filename='images/' ~ dest.bg_image) }}');">
+    <div class="card-interior">
+        <div class="rating-badge">
+            <p>{{ dest.rating }}</p>
+        </div>
+        <div class="card-text">
+            <p class="text-subtitle">{{ dest.subtitle }}</p>
+            <p class="text-title">{{ dest.title }}</p>
+            <p class="text-paragraph">{{ dest.paragraph }}</p>
+        </div>
+    </div>
+</div>

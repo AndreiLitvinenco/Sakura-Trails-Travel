@@ -1,0 +1,62 @@
+/* =========================================
+   FOOTER COMPONENT
+   ========================================= */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  margin: 0 10px;
+}
+
+.address small {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.copyright small {
+  display: block;
+}
+
+/* --- Scroll to Top Arrow --- */
+#link_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dimensiune);
+  height: var(--dimensiune);
+  position: fixed;
+  bottom: var(--spatiere);
+  right: var(--spatiere);
+  border-radius: 50%;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease,
+    background-color 0.3s ease;
+  z-index: 999;
+}
+
+#link_top:hover {
+  color: white;
+  background-color: var(--accent);
+}
+
+#link_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide arrow on mobile phones */
+@media screen and (max-width: 768px) {
+  #link_top {
+    display: none !important;
+  }
+}

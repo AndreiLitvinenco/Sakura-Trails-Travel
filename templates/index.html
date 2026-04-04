@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <div class="hero-section">
+        <nav>
+            <div class="logo-text">
+                <img src="{{ url_for('static', filename='images/logonavbar.png') }}" alt="Logo" />
+                Sakura Trails Travel
+            </div>
+
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Home</a>
+                <a href="#" class="nav-button">Contact</a>
+                <a href="#" class="nav-button">Sign up</a>
+                <a href="#" class="nav-button">Booking</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-text">TRAVEL TO JAPAN</div>
+            <p class="hero-paragraph">
+                <b>Discover</b> the beauty of Japan's rich culture, stunning
+                landscapes, and vibrant cities. Immerse yourself in the unique blend
+                of <strong>tradition</strong> and <strong>modernity</strong>.
+                <i>Your</i> unforgettable journey starts here.
+            </p>
+            <a href="#" class="explore-button">Explore more</a>
+        </div>
+
+        <div class="rectangle-buttons">
+            <button class="rectangle-button active" onclick="changeSlide(0)"></button>
+            <button class="rectangle-button" onclick="changeSlide(1)"></button>
+            <button class="rectangle-button" onclick="changeSlide(2)"></button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="section fade-in-section">
+        <div class="input-container">
+            <div class="label">Search Destination</div>
+            <input type="text" placeholder="Enter destination" />
+        </div>
+
+        <div class="input-container">
+            <div class="label">Pax Number</div>
+            <input type="text" placeholder="No. of people" />
+        </div>
+
+        <div class="input-container">
+            <div class="label">Checkin Date</div>
+            <input type="date" />
+        </div>
+
+        <div class="input-container">
+            <div class="label">Checkout date</div>
+            <input type="date" />
+        </div>
+
+        <button>Inquire now</button>
+    </div>
+
+    <div class="popular-destinations-section fade-in-section" id="Popular-section">
+        <div class="section-header">
+            <p class="small-text">Uncover places</p>
+            <h2 class="big-text">Popular Destinations</h2>
+            <p class="matching-paragraph">
+                Discover the most amazing places around the world. From bustling
+                cities to serene landscapes, explore the beauty that awaits you.
+            </p>
+        </div>
+
+        <div class="image-container">
+            {% for dest in destinations %}
+            {% include 'components/destination_card.html' %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="new-section fade-in-section" id="Packages-section">
+        <div class="section-header">
+            <p class="small-text">Popular Packages</p>
+            <h2 class="big-text">Checkout our Packages</h2>
+            <p class="matching-paragraph">
+                Explore our popular travel packages designed to make your journey
+                unforgettable.
+            </p>
+        </div>
+
+        <div class="package-container">
+            {% for package in packages %}
+            <div class="package">
+                <div class="package-image"></div>
+                <div class="package-details">
+                    <p class="package-text">{{ package.name }}</p>
+                    <div class="price-box">${{ package.price }}</div>
+                    <a href="#" class="book-now-button">Book Now</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button class="more-destinations-button">More Destinations</button>
+    </div> {% include 'components/cta.html' %}
+
+</main>
+{% endblock %}
